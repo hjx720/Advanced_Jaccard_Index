@@ -33,6 +33,8 @@ This file contains the actual comparison technique.
 
 #### compare_geopackages 
 
+Note the advanced_Jaccard_index() function is a enhanced version of this function
+
 The compare_geopackages function is getting called for a comparison between footprints. E.g. comparison_process.py calls this function every time it is doing a comparison.   
 First it is using geopandas read_file function, to open the GeoPackage Files which are to be compared. Then it calculates the Jaccard Index for the first time. The JAccard Index is calculated by the jaccard_index function. 
 
@@ -123,5 +125,7 @@ THe limits use is to limit the maximum transformation which is done to footprint
 The limits are implemented for each transformation seperatly. Each transformation has 2 limtis. One limit describes the maximum transformation e.g. for the rotation 2 gon. The second limit describes until when the maximum transformation should be applied. This could be for example at 4 gon. In this case a rotation would be applied if the determined rotation is below 4 gon. If the determined rotation is above 4 gon the footprint is not rotated at all. If the detemrined rotation is between 2 and gon, lets say 3 gon, the maximum rotation of 2 gon is used. In case the determined roation is below 2 gon, e.g. 1 gon, the 1 gon is applied completly. T
 
 
+# NRM_Building_Comparison.py
 
+This file contains an interesting comparison of OSM Data with cadastre Data. 
 
