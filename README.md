@@ -33,6 +33,8 @@ This file contains the actual comparison technique.
 
 #### compare_geopackages 
 
+Note the advanced_Jaccard_index() function is a enhanced version of this function
+
 The compare_geopackages function is getting called for a comparison between footprints. E.g. comparison_process.py calls this function every time it is doing a comparison.   
 First it is using geopandas read_file function, to open the GeoPackage Files which are to be compared. Then it calculates the Jaccard Index for the first time. The JAccard Index is calculated by the jaccard_index function. 
 
