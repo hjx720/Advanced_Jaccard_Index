@@ -125,5 +125,7 @@ THe limits use is to limit the maximum transformation which is done to footprint
 The limits are implemented for each transformation seperatly. Each transformation has 2 limtis. One limit describes the maximum transformation e.g. for the rotation 2 gon. The second limit describes until when the maximum transformation should be applied. This could be for example at 4 gon. In this case a rotation would be applied if the determined rotation is below 4 gon. If the determined rotation is above 4 gon the footprint is not rotated at all. If the detemrined rotation is between 2 and gon, lets say 3 gon, the maximum rotation of 2 gon is used. In case the determined roation is below 2 gon, e.g. 1 gon, the 1 gon is applied completly. T
 
 
+# NRM_Building_Comparison.py
 
+This file contains an interesting comparison of OSM Data with cadastre Data. 
 
